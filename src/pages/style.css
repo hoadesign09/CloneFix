@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.background{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/f6d7434e-d6de-4185-a6d4-c77a2d08737b/US-en-20220502-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 1920px;
+    height: 1080px;
+}
+.overlay{
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+}
+.homename{
+    margin-top: 1.5rem;
+    text-align:center;
+    font-family: 'Roboto';
+    font-size: 12vmin;
+    font-weight: 700;
+    animation: netflix_style 2.5s infinite;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .login-container{
+    background-size: cover;
+    height: 1086px;
+    position: relative;
+    width: 100%;
+    font-family: 'Roboto';
+}
+.signup-container{
+  background-size: cover;
+  height: 1086px;
+  position: relative;
+  width: 100%;
+  font-family: 'Roboto';
+}
+
+.login-body{
+    width: 448px;
+    height: 600px;
+    background-color:  rgba(0,0,0,0.75);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 108px;
+    border-radius: 10px;
+    z-index: 1;
+}
+.signup-body{
+  width: 448px;
+  height: 600px;
+  background-color:  rgba(0,0,0,0.75);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 108px;
+  border-radius: 10px;
+  z-index: 1;
+}
+.login-form-header{
+    font-size: 2rem;
+    font-weight: 700px;
+    color: #fff;
+}
+.signup-form-header
+{
+  font-size: 2rem;
+  font-weight: 700px;
+  color: #fff;
+}
+.login-form-container{
+    padding: 60px 70px 0;
+}
+.signup-form-container
+{
+  padding: 60px 70px 0;
+}
+.login-form-input{
+    font-family: 'Roboto';
+    width: 100%;
+    height: 50px;
+    margin-top: 16px;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 1rem;
+    background-color:  #333333;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    outline: none;
+}
+.signup-form-input{
+  font-family: 'Roboto';
+  width: 100%;
+  height: 50px;
+  margin-top: 16px;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 1rem;
+  background-color:  #333333;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  outline: none;
+}
+.login-form-input:focus{
+    border-bottom: 3px solid rgb(8 145 178);
+}
+.signup-form-input:focus{
+  border-bottom: 3px solid rgb(8 145 178);
+}
+.login-form-input:first-child{
+    margin-top: 30px;
+}
+.signup-form-input:first-child{
+  margin-top: 30px;
+}
+.login-form-button{
+    color: #fff;
+    background-color: rgb(8 145 178);
+    width: 100%;
+    font-size: 1rem;
+    padding: 16px;
+    border-radius: 4px;
+    border: 0px;
+    margin: 40px 0 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.signup-form-button{
+  color: #fff;
+  background-color: rgb(8 145 178);
+  width: 100%;
+  font-size: 1rem;
+  padding: 16px;
+  border-radius: 4px;
+  border: 0px;
+  margin: 40px 0 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.login-form-help{
+    color: #737373;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.signup-form-help{
+  color: #737373;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.rememberMe-cbx{
+    height: 16px;
+    width: 16px;
+    border-radius: 2px;
+    accent-color:#737373;
+}
+
+.remember-lbl{
+    position: relative;
+    bottom: 3px;
+}
+
+.help-link{
+    text-decoration: none;
+    color: #737373;
+}
+
+.login-form-other{
+    margin-top: 60px;
+}
+.login-form-signupnow
+{
+    font-size: 16px;
+    color: #737373;
+    margin-top: 16px;
+}
+
+.login-form-signupnow-link{
+    color: #fff;
+    text-decoration: none;
+}
+
+  @keyframes netflix_style {
+    0% {
+      text-shadow: makelongshadow(100,1);
+      color:#f3f3f3;
+      transform: scale(1.5, 1.5);
+    }
+    10% {
+      text-shadow: makelongshadow(100,1.5);
+      color:#f3f3f3;
+      transform: scale(1.5, 1.5);
+    }
+    15% {
+       color:#f3f3f3;
+    }
+    20% {    
+        color: rgb(8 145 178);
+      text-shadow: none;
+      transform: scale(1.1, 1.1);
+    }
+    75% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;    
+      color: rgb(8 145 178);
+      transform: scale(0.85, 0.9);
+    }
+    
+    100% {
+      opacity: 0;
+    }
+  }
