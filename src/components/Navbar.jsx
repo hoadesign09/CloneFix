@@ -24,7 +24,7 @@ const Navbar = () => {
       </Link>
       {user?.email ? (
         <div>
-          <Link to="/account">
+          <Link to="./src/pages/Service.html">
             <button className="text-[#FFFDE3] pr-4">Account</button>
           </Link>
 

@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
 }
+/*PC*/
+/*signin signup*/
 .background{
     background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/f6d7434e-d6de-4185-a6d4-c77a2d08737b/US-en-20220502-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
     top:0;
@@ -11,6 +13,7 @@
     right: 0;
     width: 1920px;
     height: 1080px;
+    position: fixed;
 }
 .overlay{
     top:0;
@@ -129,7 +132,7 @@
 }
 .login-form-button{
     color: #fff;
-    background-color: rgb(8 145 178);
+    background-color: rgb(93, 175, 195);
     width: 100%;
     font-size: 1rem;
     padding: 16px;
@@ -141,7 +144,7 @@
 }
 .signup-form-button{
   color: #fff;
-  background-color: rgb(8 145 178);
+  background-color: rgb(93, 175, 195);
   width: 100%;
   font-size: 1rem;
   padding: 16px;
@@ -194,6 +197,359 @@
     color: #fff;
     text-decoration: none;
 }
+.login-form-button:hover{
+  background-color: rgb(8 145 178);
+}
+.signup-form-button:hover
+{
+  background-color: rgb(8 145 178);
+}
+/*Service*/
+
+.service-container
+{
+  background-size: cover;
+  height: 1086px;
+  position: relative;
+  width: 100%;
+  font-family: 'Roboto';
+}
+.service-body
+{
+  width: 1000px;
+  height: 500px;
+  background-color:  rgba(0, 0, 0, 0.75);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 108px;
+  border-radius: 10px;
+  z-index: 1;
+}
+.service-form-header
+{
+  font-size: 2rem;
+  font-weight: 700px;
+  color: rgb(8 145 178);
+}
+.service-form-container
+{
+  padding: 30px 100px 0;
+}
+.service-form
+{
+  display: inline-flex;
+  padding: 30px 1px;
+}
+.service-form-btn
+{
+  color: #fff;
+  width: 95px;
+  height: 95px;
+  background-color: rgb(93, 175, 195);
+  border: 0px;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin: 0px 46px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.discription
+{
+  color: #fff;
+  cursor: pointer;
+  font-size:16px;
+  margin: 0px 46px;
+}
+.price
+{
+  margin-top: 2rem;
+}
+.video-quality
+{
+  margin-top: 1rem;
+}
+.resolution
+{
+  margin-top: 1rem;
+}
+.device
+{
+  margin-top: 1rem;
+}
+.service-form-btn:hover
+{
+  background-color: rgb(8 145 178);
+}
+.service-form-btn:hover ~ .discription
+{
+  color: rgb(8 145 178);
+}
+.discription:hover
+{
+  color: rgb(8 145 178);
+}
+.comment
+{
+  color: #fff;
+}
+.service-next-btn
+{
+  color: #fff;
+  width: 295px;
+  height: 25px;
+  background-color: rgb(93, 175, 195);
+  border: 0px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 30px 350px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.service-next-btn:hover
+{
+  background-color: rgb(8 145 178);;
+}
+
+/*MOBILE*/
+/*signin signup*/
+.responsive_mobile
+{
+  display: none;
+}
+.background_mobile{
+  background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/f6d7434e-d6de-4185-a6d4-c77a2d08737b/US-en-20220502-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 1920px;
+  height: 1080px;
+  position: fixed;
+}
+.homename_mobile
+{
+  margin-top: 1.5rem;
+  text-align:center;
+  font-family: 'Roboto';
+  font-size: 12vmin;
+  font-weight: 700;
+  animation: netflix_style 2.5s infinite;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.login-container_mobile{
+  background-size: cover;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  font-family: 'Roboto';
+}
+.login-body_mobile{
+  width: 448px;
+  height: 460px;
+  background-color:  rgba(0,0,0,0.75);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 108px;
+  border-radius: 10px;
+  z-index: 1;
+}
+.login-form-header_mobile{
+  font-size: 2rem;
+  font-weight: 700px;
+  color: #fff;
+}
+.login-form-container_mobile{
+  padding: 60px 70px 0;
+}
+.login-form-input_mobile{
+  font-family: 'Roboto';
+  width: 100%;
+  height: 50px;
+  margin-top: 16px;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 1rem;
+  background-color:  #333333;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  outline: none;
+}
+.login-form-input_mobile:focus{
+  border-bottom: 3px solid rgb(8 145 178);
+}
+.login-form-input_mobile:first-child{
+  margin-top: 30px;
+}
+.login-form-button_mobile{
+  color: #fff;
+  background-color: rgb(93, 175, 195);
+  width: 100%;
+  font-size: 1rem;
+  padding: 16px;
+  border-radius: 4px;
+  border: 0px;
+  margin: 23px 0 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.login-form-help_mobile{
+  color: #737373;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.rememberMe-cbx_mobile{
+  height: 16px;
+  width: 16px;
+  border-radius: 2px;
+  accent-color:#737373;
+}
+.remember-lbl_mobile{
+  position: relative;
+  bottom: 3px;
+}
+.help-link_mobile{
+  text-decoration: none;
+  color: #737373;
+}
+.login-form-other_mobile{
+  margin-top: 20px;
+}
+.login-form-signupnow_mobile
+{
+  font-size: 16px;
+  color: #737373;
+  margin-top: 16px;
+}
+.login-form-signupnow-link_mobile{
+  color: #fff;
+  text-decoration: none;
+}
+.login-form-button_mobile:hover{
+  background-color: rgb(8 145 178);
+}
+/*Service*/
+.service-container_mobile
+{
+  background-size: cover;
+  height: 1086px;
+  width: 100%;
+  font-family: 'Roboto';
+  
+}
+.service-body_mobile
+{
+  width: 500px;
+  height: 520px;
+  background-color:  rgba(0, 0, 0, 0.75);
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 108px;
+  border-radius: 10px;
+  z-index: 1;
+}
+.service-form-header_mobile
+{
+  font-size: 1.6rem;
+  font-weight: 700px;
+  color: rgb(8 145 178);
+}
+.service-form-container_mobile
+{
+  padding: 12px 1px 0;
+}
+.service-form_mobile
+{
+  padding: 1px 1px;
+}
+.service-form-btn_mobile
+{
+  color: #fff;
+  width: 75px;
+  height: 75px;
+  background-color: rgb(93, 175, 195);
+  border: 0px;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin: 20px 10px;
+  margin-left: 4rem;
+  font-weight: 700;
+  cursor: pointer;
+  
+}
+.discription_mobile
+{
+  color: #fff;
+  cursor: pointer;
+  font-size:15px;
+  margin: 20px;
+  
+}
+.video-quality_mobile
+{
+  margin-top: 1px;
+}
+.resolution_mobile
+{
+  margin-top: 1px;
+}
+.device_mobile
+{
+  margin-top: 1px;
+}
+.service-form-btn_mobile:hover
+{
+  background-color: rgb(8 145 178);
+}
+.service-form-btn_mobile:hover ~ .discription_mobile
+{
+  color: rgb(8 145 178);
+}
+.discription_mobile:hover
+{
+  color: rgb(8 145 178);
+}
+.sv1_mobile
+{
+  display: inline-flex;
+}
+.sv2_mobile
+{
+  display: inline-flex;
+}
+.sv3_mobile
+{
+  display: inline-flex;
+}
+.sv4_mobile
+{
+  display: inline-flex;
+}
+.service-next-btn_mobile
+{
+  color: #fff;
+  width: 195px;
+  height: 25px;
+  background-color: rgb(93, 175, 195);
+  border: 0px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 21px 150px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.service-next-btn_mobile:hover
+{
+  background-color: rgb(8 145 178);;
+}
 
   @keyframes netflix_style {
     0% {
@@ -227,3 +583,25 @@
       opacity: 0;
     }
   }
+
+@media (max-width: 1000px) {
+  .responesive_pc
+  {
+    display: none;
+  }
+  .responsive_mobile
+  {
+    display: block;
+  }
+}
+@media (max-height: 600px) {
+  .responesive_pc
+  {
+    display: none;
+  }
+  .responsive_mobile
+  {
+    display: block;
+  }
+}
+
