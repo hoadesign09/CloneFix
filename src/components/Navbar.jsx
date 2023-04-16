@@ -19,12 +19,12 @@ const Navbar = () => {
     <div className="flex item-center justify-between p-4 z-[100] w-full absolute">
       <Link to="/">
         <h1 className="text-cyan-600 text-4xl font-bold cursor-pointer">
-          CINEFLIX
+          CLONEFIX
         </h1>
       </Link>
       {user?.email ? (
         <div>
-          <Link to="./src/pages/Service.html">
+          <Link to="/Account">
             <button className="text-[#FFFDE3] pr-4">Account</button>
           </Link>
 
