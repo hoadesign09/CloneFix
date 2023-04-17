@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, {useState} from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 
@@ -11,13 +11,13 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError("");
+    setError("Your Email or Password incorrect! Check again!");
     try {
       await logIn(email, password);
       navigate("/");
     } catch (error) {
       console.log(error);
-      setError(error.message);
+      setError("Your Email or Password incorrect! Check again!");
     }
   };
 
