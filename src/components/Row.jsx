@@ -33,8 +33,6 @@ const Row = ({ title, fetchURL,rowID,genre}) => {
     <div>
       <div className="flex flex-row items-center">
       <h2 onClick={handleClick} className="text-cyan-600 font-bold md:text-xl p-4 cursor-pointer">{title}</h2>
-      {/* {genre ? <FiChevronsRight onClick={handleClick} className="text-white cursor-pointer"/> : null} */}
-      {/* {genre ? <FiChevronsRight onClick={handleClick} className="text-white cursor-pointer"/> : null} */}
       </div>
       <div className="relative flex items-center ml-2 group">
       <MdChevronLeft

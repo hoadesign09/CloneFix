@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import MovieList from "./pages/MovieList";
 import ProtectedRoute from "./components/ProtectedRoute";
 import MovieDetails from "./pages/MovieDetails";
+import Services from "./pages/Services";
 
 function App() {
   return (
@@ -26,6 +27,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <Account />
+              </ProtectedRoute>
+            }
+          ></Route>
+          <Route
+            path="/services"
+            element={
+              <ProtectedRoute>
+                <Services />
               </ProtectedRoute>
             }
           ></Route>
