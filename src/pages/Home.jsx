@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react"
 import Main from "../components/Main"
 import Row from "../components/Row"
 import requests from "../Requests"
-
+import Footer from "./Footer"
 const Home = () => {
   return (
     <div>
@@ -12,6 +12,7 @@ const Home = () => {
      <Row title="Top Rated" fetchURL={requests.requestTopRated} rowID= '3' genre="top_rated"/>
      <Row title="Trending" fetchURL={requests.requestTrending} rowID='4' genre="popular"/>
      <Row title="Horror" fetchURL={requests.requestHorror} rowID='5'genre="horror"/>
+     <Footer/>
     </div>
   )
 }

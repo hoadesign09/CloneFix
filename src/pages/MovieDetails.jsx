@@ -11,7 +11,6 @@ import { UserAuth } from "../context/AuthContext";
 import { db } from "../Firebase";
 import { arrayUnion,doc,updateDoc } from "@firebase/firestore"; 
 
-
 const MovieDetails = () => {
   const params = useParams();
   const key = process.env.REACT_APP_IMDB_API_KEY;
@@ -173,10 +172,7 @@ const MovieDetails = () => {
                   <FaRegHeart className="text-gray-300 text-2xl ml-6 mb-8 md:mb-0" />
                 )}
               </p>
-              <p>
-                <GiShare className="text-gray-300 text-2xl ml-3 mb-8 md:mb-0" />
-              </p>
-              <p>
+                <p>
                 <FiBookmark className="text-gray-300 text-2xl ml-3 mb-8 md:mb-0" />
               </p>
             </div>
