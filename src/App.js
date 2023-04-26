@@ -40,7 +40,6 @@ function App() {
           ></Route>
         </Routes>
       </AuthContextProvider>
-      <p>Test branch</p>
     </div>
   );
 }
