@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.service-container
+{
+  background-size: cover;
+  position: relative;   
+  width: 100%;
+  font-weight: 600;
+}
+.service-body
+{
+  width: 1000px;
+  height: 530px;
+  background-color:  rgba(17, 38, 58, 0.75);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 208px;
+  border-radius: 10px;
+  z-index: 1;
+}
+.service-form-header
+{
+  font-size: 2rem;
+  font-weight: 700px;
+  color: rgb(8 145 178);
+}
+.service-form-container
+{
+  padding: 30px 100px 0;
+}
+.service-form
+{
+  display: inline-flex;
+  padding: 30px 1px;
+}
+.service-form-btn
+{
+  color: #fff;
+  width: 95px;
+  height: 95px;
+  background-color: rgb(93, 175, 195);
+  border: 0px;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin: 0px 46px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.discription
+{
+  color: #fff;
+  cursor: pointer;
+  font-size:16px;
+  margin: 0px 46px;
+}
+.price
+{
+  margin-top: 1rem;
+}
+.video-quality
+{
+  margin-top: 0.5rem;
+}
+.resolution
+{
+  margin-top: 0.5rem;
+}
+.device
+{
+  display: flex;
+  
+}
+.tablet-icon
+{
+    margin-left: 3px;
+}
+.laptop-icon
+{
+    margin-left: 3px;
+}
+.tv-icon
+{
+    margin-left: 3px;
+}
+.service-form-btn:hover
+{
+  background-color: rgb(8 145 178);
+}
+.service-form-btn:hover ~ .discription
+{
+  color: rgb(8 145 178);
+}
+.discription:hover
+{
+  color: rgb(8 145 178);
+}
+
+.comment
+{
+  color: #fff;
+}
+.service-next-btn
+{
+  color: #fff;
+  width: 295px;
+  height: 35px;
+  background-color: rgb(93, 175, 195);
+  border: 0px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 30px 350px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.service-next-btn:hover
+{
+  background-color: rgb(8 145 178);;
+}
