@@ -1,0 +1,225 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.account-container
+{
+  background-size: cover;
+  position: relative;   
+  width: 100%;
+  font-weight: 600;
+}
+.account-body
+{
+  width: 1300px;
+  height: 630px;
+  background-color:  rgba(17, 38, 58, 0.75);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 208px;
+  border-radius: 10px;
+  z-index: 1;
+}
+.account-form-container
+{
+  padding: 30px 100px 0;
+}
+.account-form-header
+{
+  font-size: 1.3rem;
+  font-weight: 700px;
+  color: rgb(8 145 178);
+  display: flex;
+}
+.btn-lock
+{
+  color: #fff;
+  width: 95px;
+  height: 35px;
+  background-color: rgb(93, 175, 195);
+  border: 0px;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.btn-lock:hover
+{
+  background-color: rgb(8 145 178);
+}
+.btn-change
+{
+  
+  color: #fff;
+  width: 105px;
+  height: 50px;
+  background-color: rgb(93, 175, 195);
+  border: 0px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-left: 60px;
+  cursor: pointer;
+}
+.btn-change-mail
+{
+  color: rgb(93, 175, 195);
+  font-size: 1.5rem;
+  margin-left: 60px;
+  cursor: pointer;
+}
+.btn-change-mail:hover
+{
+  color: rgb(8 145 178);
+}
+.btn-change-pass
+{
+  color: rgb(93, 175, 195);
+  font-size: 1.5rem;
+  margin-left: 60px;
+  cursor: pointer;
+}
+.btn-change-pass:hover
+{
+  color: rgb(8 145 178);
+}
+.btn-change:hover
+{
+  background-color: rgb(8 145 178);
+}
+.title
+{
+  color: #fff;
+  font-size: 20px;
+}
+.account-form
+{
+  padding: 30px 1px;
+}
+.avatar
+{
+  
+  display: flex;
+}
+.email
+{
+  margin-top: 50px;
+  display: flex;
+}
+.password
+{
+  margin-top: 50px;
+  display: flex;
+}.payment-methods
+{
+  margin-top: 50px;
+  display: flex;
+}.service-packages
+{
+  margin-top: 50px;
+  display: flex;
+}
+.avatar-img
+{
+  cursor: pointer;
+}
+.input-email form{
+  display: inline-flex;
+  position:relative;
+}
+.input-pass form{
+  display: inline-flex;
+  position:relative;
+}
+.input-email form input
+{
+  display: none;
+  color: rgb(8 145 178);
+  border: none;
+  background: rgba(17, 38, 58, 0.75);
+  padding: 7px;
+  outline: none;
+  border-radius: 12px;
+  width: 400px;
+  font-size: 16px;
+  animation: fadeIn linear 1.1s;
+}
+.input-email form button{
+  display: none;
+  color:#fff; 
+  border-radius: 12px;
+  position: relative;
+  right: 0;
+  margin-left: -30px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.input-email form button:hover{
+  color: rgb(8 145 178);
+}
+.input-pass form input
+{
+  display: none;
+  color: rgb(8 145 178);
+  border: none;
+  background: rgba(17, 38, 58, 0.75);
+  padding: 7px;
+  outline: none;
+  border-radius: 12px;
+  width: 400px;
+  font-size: 16px;
+  animation: fadeIn linear 1.1s;
+}
+.input-pass form button
+{
+  display: none;
+  color: #fff; 
+  border-radius: 12px;
+  position: relative;
+  right: 0;
+  margin-left: -30px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.input-pass form button:hover{
+  color: rgb(8 145 178);
+}
+.mail_input{
+  display: none;
+}
+.pass_input
+{
+  display: none;
+}
+.mail_input:checked ~ .input-email form input 
+{
+  display: block;
+}
+.mail_input:checked ~ .input-email form button 
+{
+  display:block;
+}
+.pass_input:checked ~ .input-pass form input
+{
+  display: block;
+}
+.pass_input:checked ~ .input-pass form button
+{
+  display: block;
+}
+@keyframes fadeIn
+{
+  from {
+    opacity: 0;
+  }
+  to
+  {
+    opacity: 1;
+  }
+}
