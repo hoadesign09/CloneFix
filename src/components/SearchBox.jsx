@@ -1,14 +1,14 @@
 import React from "react";
-
-const SearchBox = (props) => {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import './SearchBox.css';
+const SearchBox = () => {
 	return (
-		<div className='col col-sm-4'>
-			<input
-				className='form-control'
-				value={props.value}
-				onChange={(event) => props.setSearchValue(event.target.value)}
-				placeholder='Type to search...'
-			></input>
+		<div className="search-zone">
+		<form>
+		  <input type="text" name="search" placeholder="Type to search...." />
+		  <button type="submit"><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+		</form>
 		</div>
 	);
 };

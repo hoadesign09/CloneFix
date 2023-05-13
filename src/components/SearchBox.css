@@ -3,8 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-.search-zone form
+.search-zone
 {
+    margin-top: 20px;
+    margin-left: 35%;
     position: relative;
 }
 .search-zone form input
@@ -15,7 +17,7 @@
     padding: 7px;
     outline: none;
     border-radius: 12px;
-    width: 400px;
+    width: 600px;
 }
 .search-zone form button
 {
