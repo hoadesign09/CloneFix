@@ -19,7 +19,7 @@ const Services = () => {
             </div>
             <h1 className='absolute right-0 left-0 bottom-0 top-[15%] text-3xl md:text-5xl font-bold text-center'>Services</h1>
           </div>
-          <div class="service-container">
+          <div className="service-container">
               <div className="service-body">
             <div className="service-form-container">
                 <div className="service-form-header">
