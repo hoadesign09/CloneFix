@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.list-container
+{
+  background-size: cover;
+  position: relative;   
+  width: 100%;
+  font-weight: 600;
+  color: #fff;
+}
+.list-body
+{
+  width: 1300px;
+  height: 630px;
+  background-color:  rgba(17, 38, 58, 0.75);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 208px;
+  border-radius: 10px;
+  z-index: 1;
+}
+.list-form-container
+{
+    padding: 30px 100px 0;
+}
+.list-form-header
+{
+    margin-top: 90px;
+    font-size: 2rem;
+    font-weight: 700px;
+    color: rgb(8 145 178);
+    
+}
+
+.list-form-header thead tr th{
+    border-right: 1px solid #fff;
+    padding: 0 90px;
+    font-weight: 800;
+}
+.list-form-item
+{
+    margin-top: 10px;
+    font-size: 20px;
+    
+}
+
+.list-form-item tr td{
+    
+    padding: 10px 106px 10px;
+}
+.btn-delete
+{
+    margin-left: 75px;
+    color: #fff;
+    background-color: rgb(93, 175, 195);
+    width: 95px;
+    height: 35px;
+    border: 0px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-delete:hover
+{
+    background-color: rgb(8 145 178);
+}
