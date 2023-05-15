@@ -22,16 +22,9 @@ const Navbar = () => {
         </h1>
       </Link>
       <div className="search-zone">
-      <form>
-        <input type="text" name="search" placeholder="Type to search...." />
-        <button type="submit"><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
-      </form>
       </div>
       {user?.email ? (
         <div>
-          <Link to="/Manager">
-            <button className="text-[#FFFDE3] pr-4">User Manager</button>
-          </Link>
           <Link to="/Account">
             <button className="text-[#FFFDE3] pr-4">Account</button>
           </Link>

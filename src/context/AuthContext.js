@@ -10,26 +10,15 @@ export function AuthContextProvider ({children}){
     const [user,setUser]= useState({})
 
     
-    function signUp(email, password, ) {
-      const user = {
-        email: email
-      };
-      createUserWithEmailAndPassword(auth, email, password)
-      axios.post('http://localhost:3132/users/', user)
-        .then(response => {
-          console.log(response.data)
-            .then((userCredential) => {
-              // Handle successful sign up
-              console.log(userCredential);
-            })
-            .catch((error) => {
-              // Handle error
-              console.log(error);
-            });
-        })
-        .catch(error => {
-          console.log(error);
-        });
+    async function signUp(email, password, ) {
+      try {
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+        const { email: email_1, password: password_1 } = userCredential.user;
+        const uid = userCredential.user.uid;
+        return await axios.post("http://localhost:3132/users", { email, password, uid });
+      } catch (error) {
+        console.log(error);
+      }
     }
     
 

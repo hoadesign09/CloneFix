@@ -10,7 +10,6 @@ import MovieList from "./pages/MovieList";
 import ProtectedRoute from "./components/ProtectedRoute";
 import MovieDetails from "./pages/MovieDetails";
 import Services from "./pages/Services";
-import Manager from "./pages/admin1/Manager";
 
 function App() {
   return (
@@ -36,14 +35,6 @@ function App() {
             element={
               <ProtectedRoute>
                 <Services />
-              </ProtectedRoute>
-            }
-          ></Route>
-          <Route
-            path="/manager"
-            element={
-              <ProtectedRoute>
-                <Manager />
               </ProtectedRoute>
             }
           ></Route>

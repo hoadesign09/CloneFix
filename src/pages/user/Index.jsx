@@ -1,40 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { collection, doc, getDoc } from 'firebase/firestore';
-import { db } from '../../Firebase';
-import UserDetail from './UserDetail';
+import React from "react";
+import axios from "axios";
 
-const UserPage = ({ userID }) => {
-  const [user, setUser] = useState(null);
-
-  useEffect(() => {
-    const fetchUser = async () => {
-      try {
-        const docRef = doc(collection(db, 'users'), userID);
-        const docSnap = await getDoc(docRef);
-        if (docSnap.exists()) {
-          setUser({ uid: docSnap.uid, ...docSnap.data() });
-        } else {
-          console.error('User not found');
-        }
-      } catch (error) {
-        console.error('Error getting user:', error);
-      }
-    };
-    fetchUser();
-  }, [userID]);
-
-
-
-  if (!user) {
-    return <p>Loading...</p>;
+function getUserData(_id, setUserData) {
+  axios.get(`http://localhost:3132/users/${_id}`)
+    .then((response) => {
+      setUserData(response.data);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
   }
-
-  return (
-    <>
-      <h1>User Page</h1>
-      <UserDetail user={user} />
-    </>
-  );
-};
-
-export default UserPage;
+export default getUserData

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -12,8 +13,10 @@
 }
 .account-body
 {
+  color: black;
+  display: block;
   width: 1300px;
-  height: 630px;
+  height: 500px;
   background-color:  rgba(17, 38, 58, 0.75);
   position: absolute;
   left: 0;
@@ -23,203 +26,113 @@
   border-radius: 10px;
   z-index: 1;
 }
-.account-form-container
-{
-  padding: 30px 100px 0;
+
+.form-acount{
+
 }
-.account-form-header
-{
-  font-size: 1.3rem;
-  font-weight: 700px;
-  color: rgb(8 145 178);
+
+.field-acc{
+  margin-top: 10px;
+}
+
+
+.formbold-form-wrapper {
+  margin: 0 auto;
+  max-width: 550px;
+  width: 100%;
+  background: white;
+}
+
+.formbold-input-flex {
   display: flex;
+  gap: 20px;
+  margin-bottom: 22px;
 }
-.btn-lock
-{
-  color: #fff;
-  width: 95px;
-  height: 35px;
-  background-color: rgb(93, 175, 195);
-  border: 0px;
-  border-radius: 10px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  margin-left: 50px;
-  cursor: pointer;
-}
-.btn-lock:hover
-{
-  background-color: rgb(8 145 178);
-}
-.btn-change
-{
-  
-  color: #fff;
-  width: 105px;
-  height: 50px;
-  background-color: rgb(93, 175, 195);
-  border: 0px;
-  border-radius: 10px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  margin-left: 60px;
-  cursor: pointer;
-}
-.btn-change-mail
-{
-  color: rgb(93, 175, 195);
-  font-size: 1.5rem;
-  margin-left: 60px;
-  cursor: pointer;
-}
-.btn-change-mail:hover
-{
-  color: rgb(8 145 178);
-}
-.btn-change-pass
-{
-  color: rgb(93, 175, 195);
-  font-size: 1.5rem;
-  margin-left: 60px;
-  cursor: pointer;
-}
-.btn-change-pass:hover
-{
-  color: rgb(8 145 178);
-}
-.btn-change:hover
-{
-  background-color: rgb(8 145 178);
-}
-.title
-{
-  color: #fff;
-  font-size: 20px;
-}
-.account-form
-{
-  padding: 30px 1px;
-}
-.avatar
-{
-  
+.formbold-input-flex > div {
+  width: 50%;
   display: flex;
+  flex-direction: column-reverse;
 }
-.email
-{
-  margin-top: 50px;
+.formbold-textarea {
   display: flex;
+  flex-direction: column-reverse;
 }
-.password
-{
-  margin-top: 50px;
-  display: flex;
-}.payment-methods
-{
-  margin-top: 50px;
-  display: flex;
-}.service-packages
-{
-  margin-top: 50px;
-  display: flex;
-}
-.avatar-img
-{
-  cursor: pointer;
-}
-.input-email form{
-  display: inline-flex;
-  position:relative;
-}
-.input-pass form{
-  display: inline-flex;
-  position:relative;
-}
-.input-email form input
-{
-  display: none;
-  color: rgb(8 145 178);
+
+.formbold-form-input {
+  width: 100%;
+  padding-bottom: 10px;
   border: none;
-  background: rgba(17, 38, 58, 0.75);
-  padding: 7px;
-  outline: none;
-  border-radius: 12px;
-  width: 400px;
+  border-bottom: 1px solid #DDE3EC;
+  background: #FFFFFF;
+  font-weight: 500;
   font-size: 16px;
-  animation: fadeIn linear 1.1s;
+  color: #07074D;
+  outline: none;
+  resize: none;
 }
-.input-email form button{
-  display: none;
-  color:#fff; 
-  border-radius: 12px;
+.formbold-form-input::placeholder {
+  color: #536387;
+}
+.formbold-form-input:focus {
+  border-color: #6A64F1;
+}
+.formbold-form-label {
+  color: #07074D;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 18px;
+}
+.formbold-form-input:focus + .formbold-form-label {
+  color: #6A64F1;
+}
+
+.formbold-input-file {
+  margin-top: 30px;
+}
+.formbold-input-file input[type="file"] {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  z-index: -1;
+}
+.formbold-input-file .formbold-input-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   position: relative;
-  right: 0;
-  margin-left: -30px;
-  border: none;
-  outline: none;
-  background: transparent;
 }
-.input-email form button:hover{
-  color: rgb(8 145 178);
+
+.formbold-filename-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 22px;
 }
-.input-pass form input
-{
-  display: none;
-  color: rgb(8 145 178);
-  border: none;
-  background: rgba(17, 38, 58, 0.75);
-  padding: 7px;
-  outline: none;
-  border-radius: 12px;
-  width: 400px;
+.formbold-filename {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 24px;
+  color: #536387;
+}
+.formbold-filename svg {
+  cursor: pointer;
+}
+
+.formbold-btn {
   font-size: 16px;
-  animation: fadeIn linear 1.1s;
-}
-.input-pass form button
-{
-  display: none;
-  color: #fff; 
-  border-radius: 12px;
-  position: relative;
-  right: 0;
-  margin-left: -30px;
+  border-radius: 5px;
+  padding: 12px 25px;
   border: none;
-  outline: none;
-  background: transparent;
+  font-weight: 500;
+  background-color: #6A64F1;
+  color: white;
+  cursor: pointer;
+  margin-top: 25px;
 }
-.input-pass form button:hover{
-  color: rgb(8 145 178);
-}
-.mail_input{
-  display: none;
-}
-.pass_input
-{
-  display: none;
-}
-.mail_input:checked ~ .input-email form input 
-{
-  display: block;
-}
-.mail_input:checked ~ .input-email form button 
-{
-  display:block;
-}
-.pass_input:checked ~ .input-pass form input
-{
-  display: block;
-}
-.pass_input:checked ~ .input-pass form button
-{
-  display: block;
-}
-@keyframes fadeIn
-{
-  from {
-    opacity: 0;
-  }
-  to
-  {
-    opacity: 1;
-  }
+.formbold-btn:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
