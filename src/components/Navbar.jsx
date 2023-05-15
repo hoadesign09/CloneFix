@@ -24,12 +24,6 @@ const Navbar = () => {
           CLONEFIX
         </h1>
       </Link>
-      <div className="search-zone">
-      <form>
-        <input type="text" name="search" placeholder="Type to search...." />
-        <button type="submit"><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
-      </form>
-      </div>
       {user?.email ? (
         <div>
           <Link to="/Account">

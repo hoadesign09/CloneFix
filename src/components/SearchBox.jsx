@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 const SearchBox = (props) => {
+
+	const [value, setValue] = useState();
+	
 	return (
 		<div className='col col-sm-4'>
 			<input

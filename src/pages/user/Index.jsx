@@ -12,7 +12,7 @@ const UserPage = ({ userID }) => {
         const docRef = doc(collection(db, 'users'), userID);
         const docSnap = await getDoc(docRef);
         if (docSnap.exists()) {
-          setUser({ id: docSnap.id, ...docSnap.data() });
+          setUser({ uid: docSnap.uid, ...docSnap.data() });
         } else {
           console.error('User not found');
         }
@@ -22,6 +22,8 @@ const UserPage = ({ userID }) => {
     };
     fetchUser();
   }, [userID]);
+
+
 
   if (!user) {
     return <p>Loading...</p>;
