@@ -1,9 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import './Navbar.css';
 const Navbar = () => {
   const { user, logOut } = UserAuth();
   const navigate = useNavigate();
@@ -24,8 +21,17 @@ const Navbar = () => {
           CLONEFIX
         </h1>
       </Link>
+      <div className="search-zone">
+      <form>
+        <input type="text" name="search" placeholder="Type to search...." />
+        <button type="submit"><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+      </form>
+      </div>
       {user?.email ? (
         <div>
+          <Link to="/Manager">
+            <button className="text-[#FFFDE3] pr-4">User Manager</button>
+          </Link>
           <Link to="/Account">
             <button className="text-[#FFFDE3] pr-4">Account</button>
           </Link>
