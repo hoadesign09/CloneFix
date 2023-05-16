@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import './Account.css';
 import SavedShow from '../components/SavedShow'
 import axios from 'axios';
-import getUserData from './user/Index';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 
@@ -41,7 +40,20 @@ const Account = (props) => {
     fetchUser();
   }, [id]);
 
-  console.log(user)
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setUser((prevUser) => ({ ...prevUser, [name]: value }));
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      await axios.put('/api/user', user); // Thay đổi đường dẫn API tương ứng
+      alert('Thông tin đã được cập nhật thành công!');
+    } catch (error) {
+      console.error('Error updating user data:', error);
+    }
+  };
 
   return (
     <div>
@@ -56,9 +68,31 @@ const Account = (props) => {
             <h1 className='absolute right-0 left-0 bottom-0 top-[15%] text-3xl md:text-5xl font-bold text-center'>My Account</h1>
             <div className='account-body'>
               <div className='form-account'>
-                <input type='text' className='field-acc' value={user?.fullname} />
-                <br/>
-                <input type='text' className='field-acc' value={user?.email}/>
+                <form className='form-flex' onSubmit={handleSubmit}>
+                  <div className='item-field'>
+                    <div className='flex-row'>
+                      <label for="email">Email:</label>
+                      <input type="email" name="email" value={user.email} onChange={handleChange}/>
+                    </div>
+                    <div className='flex-row'>
+                      <label for="password">Password:</label>
+                      <input type="password" name="password" value={user.password} onChange={handleChange}/>
+                    </div>
+                  </div>
+                  <div className='item-field'>
+                    <div className='flex-row'>
+                      <label for="fullname">Fullname:</label>
+                      <input type="text" name="fullname" placeholder='please update your info...' value={user.fullname} onChange={handleChange}/>
+                    </div>
+                    <div className='flex-row'>
+                      <label for="phone">Phone:</label>
+                      <input type="phone" name="phone" placeholder='please update your info...' value={user.phone} onChange={handleChange}/>
+                    </div>
+                  </div>                  
+                  <div className="btn">
+                    <button className='btn-submit' type="submit">Cập nhật</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
