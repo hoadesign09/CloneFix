@@ -10,7 +10,7 @@ import MovieList from "./pages/MovieList";
 import ProtectedRoute from "./components/ProtectedRoute";
 import MovieDetails from "./pages/MovieDetails";
 import Services from "./pages/Services";
-
+import SearchResults from "./components/SearchResults";
 function App() {
   return (
     <div>

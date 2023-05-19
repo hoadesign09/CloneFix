@@ -27,15 +27,9 @@
   z-index: 1;
 }
 
-.form-acount{
-
-}
-
 .field-acc{
   margin-top: 10px;
 }
-
-
 .formbold-form-wrapper {
   margin: 0 auto;
   max-width: 550px;
@@ -171,7 +165,7 @@ form{
   margin-bottom: 20px;
   justify-content: space-evenly;
 }
-.flex-row{
+.flex-row-form{
   display: flex;
   flex-direction: column;
   padding-right: 20px;

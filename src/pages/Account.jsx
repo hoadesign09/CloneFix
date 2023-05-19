@@ -70,21 +70,21 @@ const Account = (props) => {
               <div className='form-account'>
                 <form className='form-flex' onSubmit={handleSubmit}>
                   <div className='item-field'>
-                    <div className='flex-row'>
+                    <div className='flex-row-form'>
                       <label for="email">Email:</label>
                       <input type="email" name="email" value={user.email} onChange={handleChange}/>
                     </div>
-                    <div className='flex-row'>
+                    <div className='flex-row-form'>
                       <label for="password">Password:</label>
                       <input type="password" name="password" value={user.password} onChange={handleChange}/>
                     </div>
                   </div>
                   <div className='item-field'>
-                    <div className='flex-row'>
+                    <div className='flex-row-form'>
                       <label for="fullname">Fullname:</label>
                       <input type="text" name="fullname" placeholder='please update your info...' value={user.fullname} onChange={handleChange}/>
                     </div>
-                    <div className='flex-row'>
+                    <div className='flex-row-form'>
                       <label for="phone">Phone:</label>
                       <input type="phone" name="phone" placeholder='please update your info...' value={user.phone} onChange={handleChange}/>
                     </div>

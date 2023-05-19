@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
+
 const Navbar = () => {
   const { user, logOut } = UserAuth();
   const navigate = useNavigate();
@@ -21,8 +22,6 @@ const Navbar = () => {
           CLONEFIX
         </h1>
       </Link>
-      <div className="search-zone">
-      </div>
       {user?.email ? (
         <div>
           <Link to="/Account">

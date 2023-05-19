@@ -61,10 +61,10 @@ const Login = () => {
                     <input className="mr-2" type="checkbox" />
                     Remember me
                   </p>
-                  <p>Need Help?</p>
+                  <a target="_blank" href="https://github.com/hoadesign09">Need Help?</a>
                 </div>
                 <p className="py-8">
-                  <span className="text-gray-600">New to Cineflix?</span>{" "}
+                  <span className="text-gray-600">New to Cloneflix?</span>{" "}
                   <Link to="/signUp">Sign Up</Link>
                 </p>
               </form>
