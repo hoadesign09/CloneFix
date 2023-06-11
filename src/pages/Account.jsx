@@ -55,6 +55,7 @@ const Account = (props) => {
     }
   };
 
+
   return (
     <div>
           <div className='w-full text-white'>
@@ -93,6 +94,14 @@ const Account = (props) => {
                     <button className='btn-submit' type="submit">Cập nhật</button>
                   </div>
                 </form>
+                <div className="info-unc">
+                  <div className="money-service">Tài khoản: {user.money} VNĐ</div>
+                  <div className="service-type">
+                    Dịch vụ: {user.services}
+                    <br></br>
+                    <i>Đăng kí - thay đổi dịch vụ mời bạn tham khảo tại mục <a href='/#/Services'>Services</a></i>
+                    </div>
+                </div>
               </div>
             </div>
           </div>

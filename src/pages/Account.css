@@ -173,3 +173,8 @@ form{
 .btn{
   padding: 30px 0 0 120px;
 }
+.info-unc{
+  display: flex;
+  flex-direction: column;
+  color:white;
+}
